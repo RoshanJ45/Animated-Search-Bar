@@ -1,0 +1,55 @@
+<div class="search-container">
+    <style>
+        body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+}
+.search-container {
+position: relative;
+width: 50px;
+transition: width 0.3s ease-in-out;
+}
+.search-container input {
+width: 100%;
+padding: 10px 0px 10px 15px;
+font-size: 16px;
+border: none;
+border-radius: 20px;
+outline: none;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+.search-container button {
+position: absolute;
+top: 50%;
+right: -10px;
+transform: translateY(-50%);
+background: #007BFF;
+border: none;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: transform 0.3s ease;
+}
+.search-container:hover {
+width: 250px;
+}
+.search-container:hover input {
+opacity: 1;
+}
+.search-container:hover button {
+transform: translateY(-50%) rotate(360deg);
+}
+    </style>
+<input type="text" placeholder="Search...">
+<button>🔍</button>
+</div>
